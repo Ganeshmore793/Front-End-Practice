@@ -1,0 +1,9 @@
+.inputs button{
+    margin-left: 20px;
+}
+.inputs input{
+    height: 30px;
+    width: 400px;
+    border-radius: 10px;
+    
+}

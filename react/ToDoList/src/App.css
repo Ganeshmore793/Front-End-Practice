@@ -1,0 +1,23 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.main{
+  height: 600px;
+  width: 600px;
+  background-color: rgb(216, 220, 224);
+  padding: 50px;
+  border-radius: 15px;
+}
+.tasks{
+  display: flex;
+  gap: 4vh;
+}
+.vl {
+  border-left: 3px solid black;
+  height: 550px;
+  margin-top: 40px;
+}

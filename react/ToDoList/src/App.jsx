@@ -2,16 +2,16 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import Counter from './components/Counter'
+import Input from './components/Input'
+import Completed from './components/Completed'
+import Incompleted from './components/Incompleted'
 
 function App() {
-  
+ 
 
   return (
-     <>
-     <h1>Hii</h1>
-      <Counter/>
-
+    <>
+    <Input/>
     </>
   )
 }
