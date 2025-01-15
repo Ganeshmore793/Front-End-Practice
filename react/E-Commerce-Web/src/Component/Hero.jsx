@@ -1,6 +1,9 @@
-import React from 'react'
-import "./Hero.css"
+import React from 'react';
+import "./Hero.css";
+import heroImage from './Images/e-commercepic-1.jpeg';
 const Hero = () => {
+
+
   return (
     <main>
     <div className="hero-section">
@@ -30,7 +33,7 @@ const Hero = () => {
 </div>
 </div>
 <div className="hero-image">
-<img src='/e-commercepic-1.jpeg' alt='Hero image'></img>
+<img src={heroImage} alt={Hero}></img>
 </div>
 </div>
 </main>

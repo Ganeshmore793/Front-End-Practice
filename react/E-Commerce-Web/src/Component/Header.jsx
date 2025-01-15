@@ -1,35 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import "./Header.css";
 
 
 
 
 const Header = () => {
-
-   const [search, setSearch]=useState("");
-   const [searchedProducts, setSearchedProducts]=useState([]);
-
-   const sendReq=async()=>{
-      try{
-      const res= await fetch('https://dummyjson.com/products/search?q=${search}');
-
-   const data= await res.json();
-
-   setSearchedProducts(data.searchedProducts);
-   }  
-
-catch(error){
-   console.log(error);
-}
-   };
-
-   useEffect(()=>{
-      if(search){
-      sendReq();
-      }
-},[search]);
-
-
   return (
     <>
     <link rel='stylesheet' href='https://kit.fontawesome.com/a076d05399.js'></link>
@@ -52,11 +27,7 @@ catch(error){
 
           <div className="search-box">
           
-          <input type="search" placeholder="Search for Products" onChange={(e)=>setSearch(e.target.value)} value={search} >
-          </input>
-          {searchedProducts.map((product) => {
-            return <li key={product.id}>{product.title}</li>;
-          })}
+          <input type="search" placeholder="Search for Products"  ></input>
          </div>
     
          <div className="cart-icon">

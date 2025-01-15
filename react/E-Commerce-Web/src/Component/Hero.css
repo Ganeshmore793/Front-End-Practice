@@ -1,6 +1,7 @@
 .hero-section{
     display: flex; 
     margin-top: 148px;
+    background-color: #f0f0f0 ;
 }
 .hero-info{
 line-height: 1em;
@@ -20,4 +21,10 @@ hr{
     display: flex;
     gap: 6vh;
     margin-top: 50px;
+}
+
+.hero-image img{
+    margin-right: 0%;
+    height: 630px;
+    width: 500px
 }

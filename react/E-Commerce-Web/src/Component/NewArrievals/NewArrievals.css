@@ -4,11 +4,9 @@
     padding: 20px;
  }
  
- .cards{
+ .card{
      display: flex;
-     gap: 1vh;
-     justify-content: space-evenly;
-     
+     gap: 1vh; 
  }
  
  .card img:hover{
@@ -34,4 +32,50 @@
      font-size: 15px;
  
  }
+
+ .products img{
+   height: 300px;
+   width: 300px;
+ }
  
+ .products li{
+    list-style: none;
+    text-align: center;
+    background-color:black;
+    color: white;
+ }
+ 
+ .card-container {
+    display: flex;
+    gap: 20px; 
+    padding: 20px;
+    justify-content: space-evenly;
+    display: grid; /* Enables CSS Grid */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+     
+  }
+
+  .products{
+    background-color:beige;
+    border-radius: 15px;
+  }
+
+  .button button{
+    background-Color:#6c757d;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    font-Size: 16px;
+    border-Radius: 5px;
+    cursor: pointer;  
+    
+}
+
+.button{
+    display: flex; /* Use Flexbox for centering */
+    justify-content: center;
+}
+
+
+
+  

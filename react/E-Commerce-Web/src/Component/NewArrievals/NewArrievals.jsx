@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from "react-router-dom";
-
+import "./NewArrievals.css"
 const NewArrievals = () => {
     const[products,setProducts]=useState([]);
+    const[showAll,setShowAll]=useState(false);
 
     async function getProducts(){
         try{
-          const res= await fetch("https://dummyjson.com/products?limit=4");
+          const res= await fetch("https://dummyjson.com/products");
          const data=await res.json();
     
          setProducts(data.products); 
@@ -19,42 +20,46 @@ const NewArrievals = () => {
         getProducts();
       }, []);
 
-  return (
-    
    
+  return (
     <>
-    
     <section>
     <div>
-    <div className="arrieval-text">   
-         
-        <br/>
-        <br/>
-        <hr/>
-        <br/>
-        <br/>
-         <h1>NEW ARRIEVALS</h1>
-        </div>
-
-        <div className="cards">
-            <div className="card">
-              {
-                products.map((product)=>{
+    <div className="arrieval-text">         
+          <h1>NEW ARRIEVALS</h1>    
+    </div>
+      <div className='card-container'>
+           {
+                products.slice(0, showAll ? products.length:4)
+                .map((product,index)=>{
                   return (
-                    <>
-              
-                  <li>{product.price}</li>
-                  <li>{product.description}</li>
-                  </>
+           <>   
+            
+              <div className='products' key={index}>
+                
+                  <img src={product.thumbnail} alt='product images'></img>
+                 <b> <li>{product.title}</li> </b>
+                  <li>Price:<b>{product.price}</b></li>  
+                  <li>{product.brand}</li>
+                     
+              </div>
+                            
+           </>    
                 );
                 })
               }
-            </div>
-        </div> 
+     </div>
         </div>  
 </section>
-</>
+<div className='button'>
+  <button onClick={()=>setShowAll((prev) => !prev) } style={{
+       }}>
+    {showAll ? 'Hide All' : 'View All'}
+    </button>
+    </div>
+  </>
   );
+
 }
 
 
