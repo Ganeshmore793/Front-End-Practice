@@ -1,0 +1,23 @@
+.hero-section{
+    display: flex; 
+    margin-top: 148px;
+}
+.hero-info{
+line-height: 1em;
+width: 900px;
+padding: 70px;
+padding-top: 100px;
+}
+.hero-info h1{
+    font-size: 60px;
+    font-weight: bolder;
+}
+hr{
+    width: 1200px;
+    size: 2px;
+}
+.hero-end{
+    display: flex;
+    gap: 6vh;
+    margin-top: 50px;
+}

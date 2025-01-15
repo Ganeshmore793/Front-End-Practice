@@ -1,0 +1,37 @@
+.arrieval-text h1{
+    font-size: 50px;
+    text-align: center;
+    padding: 20px;
+ }
+ 
+ .cards{
+     display: flex;
+     gap: 1vh;
+     justify-content: space-evenly;
+     
+ }
+ 
+ .card img:hover{
+     transform: scale(1.1) ;
+     transition-duration: 30;
+ }
+ 
+ .card img{
+     height: 270px;
+     width: 230px;   
+     border-radius: 5px;
+ }
+ .review{
+     display: flex;
+     gap: 90px;
+     justify-content: space-evenly;
+     padding-left: 60px;
+     padding-right: 53px;
+     padding-top: 10px;
+ } 
+ 
+ .review p{
+     font-size: 15px;
+ 
+ }
+ 
