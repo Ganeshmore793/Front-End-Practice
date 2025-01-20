@@ -20,10 +20,10 @@ const Header = () => {
 
      <div className="header-main">
           <h1>SHOP.CO</h1>
-          <p><a href="shop.html">Shop</a></p>
-          <p><a href="#arrieval-section">New Arrival</a></p>
-          <p><a href="#sellings">Top Selling</a></p>
-          <p><a href="#on-sale">on sale</a></p>
+          <p><a href="#">Shop</a></p>
+          <p><a href="#">New Arrival</a></p>
+          <p><a href="#">Top Selling</a></p>
+          <p><a href="#">on sale</a></p>
 
           <div className="search-box">
           

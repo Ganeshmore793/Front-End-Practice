@@ -72,7 +72,7 @@
 }
 
 .button{
-    display: flex; /* Use Flexbox for centering */
+    display: flex; 
     justify-content: center;
 }
 
