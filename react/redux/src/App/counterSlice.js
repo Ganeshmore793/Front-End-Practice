@@ -15,5 +15,5 @@ const counterSlice=createSlice({
 
 });
 
-export const counterReducer=counterSlice.reducer;
+export const countReducer=counterSlice.reducer;
 export const {increament , decrement} = counterSlice.actions;
