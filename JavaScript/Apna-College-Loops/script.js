@@ -75,3 +75,58 @@
 
 // console.log("Congractulations you are win");
 
+
+// let name=prompt("Enter first and last name");
+
+// let userName="@"+name;
+
+// if(userName!=name){
+//      name=prompt("Please enter name start with @");
+// }
+
+// console.log(userName+userName.length);
+
+//Arrays 
+
+// let arr=[89,90,89,87,65];
+// let sum=0
+// for(let i=0;i<arr.length;i++){
+//      sum=sum+arr[i];
+// }
+
+// let avg=sum/arr.length;
+
+// console.log("Average of students is  "+avg );
+ 
+
+// let marks=[89,87,98,98,78];
+// let sum=0;
+
+// for(let val of marks){
+//     sum+=val;
+// }
+// let avg=sum/marks.length;
+// console.log(`average is  ${avg} `);
+
+
+// let price=[300,400,500,600,700];
+
+// for(let i=0;i<price.length;i++){
+
+ //    console.log(price[i]);
+//     let val1=price[i]/10;
+//     let val2=price[i]-val1;
+
+//     price[i]=val2
+
+//     console.log(price[i]);
+// }
+
+
+// let arr=["BloomBerg","Microsoft","Uber","Google","IBM","Netflix"];
+
+// //arr.shift();
+
+// //arr.splice(2,1,"Ola");
+// //arr.push("Amazon");
+// console.log(arr);
