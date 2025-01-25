@@ -43,3 +43,20 @@
 // arr.forEach((val)=>{
 //     console.log(val);
 // })
+
+//for Each loop
+//we have to use for each loop with arrow function here val ind and arr is optional.
+// let arr=[56,76,87,66,45];
+
+// arr.forEach((val,ind,arr)=>{
+//     console.log(val,ind,arr);
+// });
+
+
+// let num=[2,4,6,8,10];
+
+// num.forEach((val)=>{
+//     let sqr=val*val;
+//     console.log(`the square of each number in array is  ${sqr}`);
+// })
+
