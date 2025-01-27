@@ -60,3 +60,32 @@
 //     console.log(`the square of each number in array is  ${sqr}`);
 // })
 
+//
+
+// let marks=[40,67,87,98,99];
+
+// marks.map((val)=>{
+//     if(val>90){
+//         console.log(val); 
+//     }
+// });
+
+// let num=prompt("Enter any number");
+
+// let arr=[];
+
+// for(let i=1;i<=num;i++){
+//     arr[i-1]=i;
+// }
+// const sum=arr.reduce((prev,curr)=>{
+//     return prev+curr;
+// });
+// console.log("Addition of numbers is "+sum);
+
+// const mul=arr.reduce((prev,curr)=>{
+//     return prev*curr;
+
+// });
+// console.log("factorial of numbers is"+mul);
+
+
